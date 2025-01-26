@@ -127,7 +127,7 @@ printOutput:
 	syscall 
 	
 	beq $t0, 2, printRemainder	# Jeśli kod operacji zgadza się z kodem przypisanym dzieleniu - 
-			# - wyświetlanie reszty z dzielenia
+					# - wyświetlanie reszty z dzielenia
 	
 	j askForAnother
 	
@@ -172,7 +172,7 @@ invalidOp:			# Wyświetlenie informacji o niedostępności wybranej opcji
 	
 	j askForAnother					
 
-exit:			# Wyjście z programu
+exit:				# Wyjście z programu
 	li $v0, 4
 	la $a0, endMsg
 	syscall
