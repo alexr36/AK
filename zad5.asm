@@ -189,6 +189,7 @@ foundEmptySlot:			# Obsługa znalezionego wolnego miejsca
 	jr $ra	
 	
 # -- Procedury do zapisywania wartości ruchu w planszy -------------------------------------------------------------------------------------------------------------
+
 saveInput:
 	addi $s4, $s4, 1	# Inkrementacja licznika ruchów
 	
